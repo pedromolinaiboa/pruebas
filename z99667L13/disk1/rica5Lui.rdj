@@ -1,0 +1,13 @@
+{
+	"ini_list"	: 
+	[
+		{
+			"PrinterModelName"	: ["MP 501","MP 601"],
+			"LoadDll"			: "MFRicr64.dll",
+			"ResDll"			: "RD05Ld64.dll",
+			"Version"			: "1.1.19.0"
+			
+		}
+	]
+}
+

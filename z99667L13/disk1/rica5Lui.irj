@@ -1,0 +1,105 @@
+{
+
+	"common" :
+	{
+
+		"root" :
+		{
+                        "SoftwareID"				: [ "0000000700000321",		"REG_SZ" ],
+			"Logging"								: [ "1",					"REG_DWORD" ]
+		},
+
+		"common_scope" :
+		{
+			"DriverProductVersion"		: [ "1.3.0.0",		"REG_SZ" ],
+			"Date"				: [ "04/14/2020",	"REG_SZ" ],
+			"PrinterModelName"		: [ "MP 501",	"REG_SZ" ],
+			"PDL"						: [ "PCLXL",				"REG_SZ" ]
+		},
+
+		"ui_scope" :
+		{
+		},
+
+		"gr_scope" :
+		{
+		},
+
+		"capsdb_scope" :
+		{
+		}
+
+	},
+
+       "infotec MP 501 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 501", "REG_SZ" ]
+               }
+       },
+       "infotec MP 601 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 601", "REG_SZ" ]
+               }
+       },
+"LANIER MP 501 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 501", "REG_SZ" ]
+               }
+       },
+       "LANIER MP 601 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 601", "REG_SZ" ]
+               }
+       },
+"NRG MP 501 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 501", "REG_SZ" ]
+               }
+       },
+       "NRG MP 601 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 601", "REG_SZ" ]
+               }
+       },
+"RICOH MP 501 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 501", "REG_SZ" ]
+               }
+       },
+       "RICOH MP 601 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 601", "REG_SZ" ]
+               }
+       },
+"SAVIN MP 501 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 501", "REG_SZ" ]
+               }
+       },
+       "SAVIN MP 601 PCL 6" :
+       {
+               "common_scope" :
+               {
+                       "PrinterModelName"              : [ "MP 601", "REG_SZ" ]
+               }
+       }
+ 
+}

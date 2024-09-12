@@ -1,0 +1,215 @@
+;------------------------------------------------------------
+; Copyright (c) 2007-2020 RICOH COMPANY, LTD
+; All Rights Reserved
+; Printer Driver Setup Information File
+;------------------------------------------------------------
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = %Ricoh%
+ClassGUID   = {4D36E979-E325-11CE-BFC1-08002BE10318}
+Class       = Printer
+DriverVer  = 04/14/2020,1.3.0.0
+CatalogFile	= rica5L.cat
+
+[Manufacturer]
+%infotec%=infotec,NTamd64,NT.5.1
+%LANIER%=LANIER,NTamd64,NT.5.1
+%NRG%=NRG,NTamd64,NT.5.1
+%Ricoh%=Ricoh,NTamd64,NT.5.1
+%SAVIN%=SAVIN,NTamd64,NT.5.1
+
+
+;WindowsXP(amd64)
+[infotec.NTamd64]
+"infotec MP 501 PCL 6"=infotec_MP_501_64.dat,USBPRINT\infotecMP_501E1E5,LPTENUM\infotecMP_501E1E5,infotecMP_501E1E5
+"infotec MP 601 PCL 6"=infotec_MP_601_64.dat,USBPRINT\infotecMP_601E115,LPTENUM\infotecMP_601E115,infotecMP_601E115
+
+[LANIER.NTamd64]
+"LANIER MP 501 PCL 6"=LANIER_MP_501_64.dat,USBPRINT\LANIERMP_50141CF,LPTENUM\LANIERMP_50141CF,LANIERMP_50141CF
+"LANIER MP 601 PCL 6"=LANIER_MP_601_64.dat,USBPRINT\LANIERMP_601413F,LPTENUM\LANIERMP_601413F,LANIERMP_601413F
+
+[NRG.NTamd64]
+"NRG MP 501 PCL 6"=NRG_MP_501_64.dat,USBPRINT\NRGMP_50149B6,LPTENUM\NRGMP_50149B6,NRGMP_50149B6
+"NRG MP 601 PCL 6"=NRG_MP_601_64.dat,USBPRINT\NRGMP_6014946,LPTENUM\NRGMP_6014946,NRGMP_6014946
+
+[Ricoh.NTamd64]
+"RICOH MP 501 PCL 6"=RICOH_MP_501_64.dat,USBPRINT\RICOHMP_5010E09,LPTENUM\RICOHMP_5010E09,RICOHMP_5010E09,RICOHMP_501_E09
+"RICOH MP 601 PCL 6"=RICOH_MP_601_64.dat,USBPRINT\RICOHMP_6010EF9,LPTENUM\RICOHMP_6010EF9,RICOHMP_6010EF9,RICOHMP_601_EF9
+
+[SAVIN.NTamd64]
+"SAVIN MP 501 PCL 6"=SAVIN_MP_501_64.dat,USBPRINT\SAVINMP_501A298,LPTENUM\SAVINMP_501A298,SAVINMP_501A298
+"SAVIN MP 601 PCL 6"=SAVIN_MP_601_64.dat,USBPRINT\SAVINMP_601A268,LPTENUM\SAVINMP_601A268,SAVINMP_601A268
+
+
+;WindowsXP(x86)
+[infotec.NT.5.1]
+"infotec MP 501 PCL 6"=infotec_MP_501_64.dat,USBPRINT\infotecMP_501E1E5,LPTENUM\infotecMP_501E1E5,infotecMP_501E1E5
+"infotec MP 601 PCL 6"=infotec_MP_601_64.dat,USBPRINT\infotecMP_601E115,LPTENUM\infotecMP_601E115,infotecMP_601E115
+
+[LANIER.NT.5.1]
+"LANIER MP 501 PCL 6"=LANIER_MP_501_64.dat,USBPRINT\LANIERMP_50141CF,LPTENUM\LANIERMP_50141CF,LANIERMP_50141CF
+"LANIER MP 601 PCL 6"=LANIER_MP_601_64.dat,USBPRINT\LANIERMP_601413F,LPTENUM\LANIERMP_601413F,LANIERMP_601413F
+
+[NRG.NT.5.1]
+"NRG MP 501 PCL 6"=NRG_MP_501_64.dat,USBPRINT\NRGMP_50149B6,LPTENUM\NRGMP_50149B6,NRGMP_50149B6
+"NRG MP 601 PCL 6"=NRG_MP_601_64.dat,USBPRINT\NRGMP_6014946,LPTENUM\NRGMP_6014946,NRGMP_6014946
+
+[Ricoh.NT.5.1]
+"RICOH MP 501 PCL 6"=RICOH_MP_501_64.dat,USBPRINT\RICOHMP_5010E09,LPTENUM\RICOHMP_5010E09,RICOHMP_5010E09,RICOHMP_501_E09
+"RICOH MP 601 PCL 6"=RICOH_MP_601_64.dat,USBPRINT\RICOHMP_6010EF9,LPTENUM\RICOHMP_6010EF9,RICOHMP_6010EF9,RICOHMP_601_EF9
+
+[SAVIN.NT.5.1]
+"SAVIN MP 501 PCL 6"=SAVIN_MP_501_64.dat,USBPRINT\SAVINMP_501A298,LPTENUM\SAVINMP_501A298,SAVINMP_501A298
+"SAVIN MP 601 PCL 6"=SAVIN_MP_601_64.dat,USBPRINT\SAVINMP_601A268,LPTENUM\SAVINMP_601A268,SAVINMP_601A268
+
+
+[infotec_MP_501_64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= rica5Lcd.psz
+LanguageMonitor	= rica5Llm,rica5Llm.dll
+FeatureScore		= 0x80
+
+[infotec_MP_601_64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= rica5Lcd.psz
+LanguageMonitor	= rica5Llm,rica5Llm.dll
+FeatureScore		= 0x80
+
+[LANIER_MP_501_64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= rica5Lcd.psz
+LanguageMonitor	= rica5Llm,rica5Llm.dll
+FeatureScore		= 0x80
+
+[LANIER_MP_601_64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= rica5Lcd.psz
+LanguageMonitor	= rica5Llm,rica5Llm.dll
+FeatureScore		= 0x80
+
+[NRG_MP_501_64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= rica5Lcd.psz
+LanguageMonitor	= rica5Llm,rica5Llm.dll
+FeatureScore		= 0x80
+
+[NRG_MP_601_64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= rica5Lcd.psz
+LanguageMonitor	= rica5Llm,rica5Llm.dll
+FeatureScore		= 0x80
+
+[RICOH_MP_501_64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= rica5Lcd.psz
+LanguageMonitor	= rica5Llm,rica5Llm.dll
+FeatureScore		= 0x80
+
+[RICOH_MP_601_64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= rica5Lcd.psz
+LanguageMonitor	= rica5Llm,rica5Llm.dll
+FeatureScore		= 0x80
+
+[SAVIN_MP_501_64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= rica5Lcd.psz
+LanguageMonitor	= rica5Llm,rica5Llm.dll
+FeatureScore		= 0x80
+
+[SAVIN_MP_601_64.dat]
+CopyFiles		= RPD_FILES,RPD_COMMON,RPD_COMMON_SYS32
+DataSection		= RPD_DATA
+DataFile		= rica5Lcd.psz
+LanguageMonitor	= rica5Llm,rica5Llm.dll
+FeatureScore		= 0x80
+
+
+[RPD_FILES]
+rica5Lui.dll,rica5Lui.dl_
+rica5Lui.irj
+rica5Lui.rdj
+rica5Lui.rcf
+rica5Lug.dll,rica5Lug.dl_
+rica5Lug.miz
+rica5Lur.dll,rica5Lur.dl_
+rica5Lgr.dll,rica5Lgr.dl_
+rica5Lgl.dll,rica5Lgl.dl_
+rica5Lci.dll,rica5Lci.dl_
+rica5Lcd.dll,rica5Lcd.dl_
+rica5Lcd.psz
+rica5Lcf.cfz
+rica5Lcl.ini
+rica5Lch.chm
+rica5Lcz.dlz
+rica5Lcj.dll,rica5Lcj.dl_
+rica5Lct.dll,rica5Lct.dl_
+rica5Lcb.dll,rica5Lcb.dl_
+rica5Ltl.exe,rica5Ltl.ex_
+
+[RPD_COMMON_SYS32]
+rica5Llm.dll,rica5Llm.dl_,,0x00000020
+
+[RPD_COMMON]
+ricdb64.dll,ricdb64.dl_,,0x00000020
+mfricr64.dll,mfricr64.dl_,,0x00000020
+RD05Ld64.dll,RD05Ld64.dl_,,0x00000020
+
+[RPD_DATA]
+ConfigFile		= rica5Lui.dll
+DriverFile		= rica5Lgr.dll
+HelpFile		= rica5Lch.chm
+
+[DestinationDirs]
+DefaultDestDir		= 66000
+RPD_COMMON_SYS32	 	= 66002
+
+[SourceDisksNames.amd64]
+1 = %DSK%,,,
+
+[PrinterPackageInstallation.amd64]
+PackageAware			=TRUE
+
+[SourceDisksFiles.amd64]
+rica5Lui.dl_	= 1
+rica5Lui.irj	= 1
+rica5Lui.rdj	= 1
+rica5Lui.rcf	= 1
+rica5Lug.dl_	= 1
+rica5Lug.miz	= 1
+rica5Lur.dl_	= 1
+rica5Lgr.dl_	= 1
+rica5Lgl.dl_	= 1
+rica5Lci.dl_		= 1
+rica5Lcd.dl_	= 1
+rica5Lcd.psz	= 1
+rica5Lcf.cfz	= 1
+rica5Lcl.ini	= 1
+rica5Lch.chm	= 1
+rica5Lcz.dlz		= 1
+rica5Lcj.dl_	= 1
+rica5Lct.dl_	= 1
+rica5Lcb.dl_	= 1
+rica5Llm.dl_	= 1
+ricdb64.dl_			= 1
+mfricr64.dl_		= 1
+rica5Ltl.ex_      = 1
+RD05Ld64.dl_		= 1
+
+[Strings]
+Ricoh="Ricoh"
+infotec="infotec"
+LANIER="LANIER"
+NRG="NRG"
+SAVIN="SAVIN"
+DSK= "PCL6 Printer Driver Disk1"
